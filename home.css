@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts
+font-family: 'Oswald', sans-serif; -- weight 600 and 300
+*/
+
+:root {
+    --blue-color: #425887;
+    --black-color: #010400;
+    --white-color: #eef0f2;
+    --pink-color: #ee00ff;
+}
+
+body {
+    background: var(--blue-color);
+}
+
+#navlinks ul {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-evenly;
+    right: 0;
+    margin-left: 40%;
+    margin-right: 40px;
+    list-style: none;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+#navlinks ul li {
+    padding-right: 6%;
+    padding-left: 4%;
+    border-right: 1px solid var(--pink-color);
+    margin-top: 55px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 1px var(--pink-color);
+}
+
+a:visited {
+    color: var(--white-color);
+}
+
+#headerlogo {
+    height: 115px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+#navbar {
+    position: sticky;
+    height: 160px;
+    top: 0;
+    box-shadow: 0px 0px 40px black;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* sidebar */
+
+#sidebar {
+    position: fixed;
+    bottom: 0;
+    margin: 10% 0%;
+    fill: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sendemail {
+    color: var(--white-color);
+    font-family: 'Vujahday Script', 'cursive';
+    text-align: center;
+    font-size: 26px;
+    line-height: 20px;
+}
+
+#emailbtn {
+    height: 50px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+    #emailbtn:hover {
+        fill: var(--pink-color);
+    }
+
+#followus {
+    color: var(--white-color);
+    font-family: 'Vujahday Script', 'cursive';
+    text-align: center;
+    font-size:26px;
+    line-height: 20px;
+}
+
+#instagramlogo {
+    height: 40px;
+    width: 50px;
+    margin-top: 20px;
+    fill: var(--white-color);
+}
+
+    #instagramlogo:hover {
+        fill: var(--pink-color);
+    }
+
+
+/* main page */
+
+#homebanner {
+    display: flex;
+    margin-top: 125px;
+    justify-content: space-around;
+    margin: 100px 100px;
+    align-items: center;
+}
+
+#betterplace {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 6vw;
+    text-align: right;
+}
+
+#mainlogo {
+    height: 30vw;
+    margin-left: 50px;
+}
+
+#welcomep {
+    font-family: 'Oswald', sans-serif;
+    color: var(--white-color);
+    font-size: 22px;
+    margin: 0px 10vw;
+    border-bottom: 1px white solid;
+    padding-bottom: 30px;
+}
+
+    #welcomesentence {
+        color: var(--pink-color);
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 30px;
+        font-family: 'Vujahday Script', cursive;
+    }
+
+/* Youtube and Widget */
+
+#mediacontainer {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#youtubewindow {
+    margin-right: 50px;
+    border-radius: 3px;
+    
+}
+
+/* Bryan Widget */
+
+#bryanwidget {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.3);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3px;
+}
+
+#btn {
+    width: 50%;
+    padding: 7px;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 22px;
+    background-color: rgba(255,255,255,.8);
+    border: none;
+    border-radius: 3px;
+}
+
+#btn:hover {
+    background-color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+#btn:active {
+    background-color: var(--pink-color);
+}
+
+#output {
+    color: white;
+    font-family: 'Oswald', 'sans-serif';
+    text-align: center;
+    font-size: 24px;
+    margin: 0px 10px;
+}
+
+#BryanHead {
+    height: 120px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    background-color: rgba(0,0,0,.7);
+ }
+
+
+#navlinksfoot ul {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    right: 0;
+    list-style: none;
+    font-weight: 300;
+    color: var(--white-color);
+    width: 400px;
+}
+
+    #navlinksfoot ul li {
+        margin-top: 15px;
+    }
+
+footer p {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(255,255,255,.6);
+    margin-top: 10px;
+}
