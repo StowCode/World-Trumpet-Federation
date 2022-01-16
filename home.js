@@ -28,3 +28,15 @@ btn.addEventListener ('click', function(){
     var randomQuote = quotes[Math.floor(Math.random() * quotes.length) ]
     output.innerHTML = randomQuote;
 })
+
+// Mobile Navbar Below
+
+function mobileMenu() {
+    if (document.getElementById('mobilenavbar').style.display ==  'block') {
+        document.getElementById('mobilenavbar').style.display = 'none';
+    } else {
+        document.getElementById('mobilenavbar').style.display = 'block';
+    } 
+}
+document.getElementById('hamburger').addEventListener('click', mobileMenu);
+
