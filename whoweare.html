@@ -40,6 +40,30 @@
 
         </nav>
 
+        <div id=hamburger>
+            <div class=hamburgerline></div>
+            <div class=hamburgerline></div>
+            <div class=hamburgerline></div>
+        </div>
+
+        <div id=mobilenavbar>
+            <nav>
+                <ul id=mobilenavlinks>
+                    <li><a href="index.html">Home</a></li>
+                    <li id=whoweare><a href="whoweare.html">Who We Are</a>
+                        <ul class=mobiledropdown id=mobiledropdown>
+                            <li><a href="bryan.html">Bryan</a></li>
+                            <li><a href="bill.html">Bill</a></li>
+                            <li><a href="joey.html">Joey</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="openbell.html">The Open Bell</a></li>
+                    <li><a href="therules.html">The Rules</a></li>
+                </ul>
+    
+            </nav>
+        </div>
+
     </header>
 
     <div id=sidebar>
@@ -70,22 +94,48 @@
     </div>
 
         <div id=bioscontainer>
-            <div id=BAW class=biotile><img class=headshot viewBox="0 0 100 100" src=Resources/Images/BAW.jpg><p>Brian Appleby-Wineberg</p></div>
-            <div id=WJS class=biotile><img  class=headshot viewBox="0 0 100 100" src=Resources/Images/WJS.jpg><p>William Stowman</p></div>
-            <div id=JT class=biotile><img  class=headshot viewBox="0 0 100 100" src=Resources/Images/JT.jpg><p>Joey Tartell</p></div>
+            <div id=BAW class=biotile>
+                <img id=BAWshot class=headshot viewBox="0 0 100 100" src=Resources/Images/BAW.jpg>
+                <div class=infocontainer>
+                    <p>Brian Appleby-Wineberg</p>
+                    <p>Professor of Trumpet</p>
+                    <p>Head of Brass</p>
+                    <p>Rowan University</p>
+                </div>
+            </div>
+            <div id=WJS class=biotile>
+                <img  id=WJSshot class=headshot viewBox="0 0 100 100" src=Resources/Images/WJS.jpg>
+                <div class=infocontainer>
+                    <p>William Stowman</p>
+                    <p>Professor of Trumpet</p>
+                    <p>Chair of the Department of Music</p>
+                    <p>Messiah University</p>
+                </div>
+            </div>
+            <div id=JT class=biotile>
+                <img  id=JTshot class=headshot viewBox="0 0 100 100" src=Resources/Images/JT.jpg>
+                <div class=infocontainer>
+                    <p>Joey Tartell</p>
+                    <p>Professor of Trumpet</p>
+                    <p>Director of Undergraduate Studies</p>
+                    <p>Indiana University</p>
+                </div>
+            </div>
         </div>
  
         <footer>
-            <!-- <p id=copyright>&copy WTF, 2022</p> -->
-            <nav id=navlinksfoot>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="whoweare.html">Who We Are</a></li>
-                    <li><a href="openbell.html">The Open Bell</a></li>
-                    <li><a href="therules.html">The Rules</a></li>
-                </ul>
-            </nav>
-            <!-- <a href="mailto:worldtrumpetfederation@gmail.com"><p>worldtrumpetfederation@gmail.com</p></a> -->
+            <div id=footercontent>
+                <p id=copyright>&copy WTF, 2022</p>
+                <nav id=navlinksfoot>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="whoweare.html">Who We Are</a></li>
+                        <li><a href="openbell.html">The Open Bell</a></li>
+                        <li><a href="therules.html">The Rules</a></li>
+                    </ul>
+                </nav>
+                <a href="mailto:worldtrumpetfederation@gmail.com"><p>worldtrumpetfederation@gmail.com</p></a>
+            </div>
         </footer>
 
     <script src=home.js></script>

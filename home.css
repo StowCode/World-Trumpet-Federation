@@ -122,7 +122,7 @@ body {
     }
 }
 
-@media only screen and (max-width:350px) {
+@media only screen and (max-width:400px) {
     #navlinks {
         display: none;
     }
@@ -160,7 +160,7 @@ body {
 
 /* Change "max-width" to enable mobile navbar if requested */
 
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 400px) {
     #hamburger {
         cursor: pointer;
         display: block;
@@ -464,6 +464,13 @@ footer {
     background-color: rgba(0,0,0,.7);
  }
 
+ #footercontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+ }
+
 #navlinksfoot ul {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -488,14 +495,21 @@ footer p {
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     footer {
         background-color: var(--black-color);
     }
 
     #navlinksfoot ul {
+        display: none;
         font-size: 14px;
         width: 100%;
+    }
+
+    #footercontent {
+        display: block;
+        font-size: 12px;
+        line-height: 10px; 
     }
 
     #navlinksfoot {

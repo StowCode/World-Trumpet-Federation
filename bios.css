@@ -83,6 +83,10 @@ body {
     display: block;
 }
 
+#hamburger {
+    display: none;
+}
+
 @media only screen and (max-width: 700px) {
     #navlinks {
         display: flex;
@@ -118,12 +122,61 @@ body {
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width:400px) {
     #navlinks {
         display: none;
     }
 }
 
+/* Mobile Navbar */
+
+#mobilenavbar {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    margin-top: 100px;
+    margin-right: 10px;
+    width: 200px;
+    right: 0;
+    border-radius: 5px;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#mobilenavlinks {
+    list-style: none;
+}
+
+#mobilenavlinks li {
+    margin: 35px;
+}
+
+#mobiledropdown {
+    list-style: square;
+    display: block;
+    width: 150px;
+}
+
+/* Change "max-width" to enable mobile navbar if requested */
+
+@media only screen and (max-width: 400px) {
+    #hamburger {
+        cursor: pointer;
+        display: block;
+        margin-top:25px;
+        margin-right: 25px;
+        z-index: 10;
+    }
+
+    .hamburgerline {
+        display: block;
+        margin-top: 10px;
+        height: 3px;
+        width:30px;
+        background-color: var(--white-color);
+    }
+}
 
 /* sidebar */
 
@@ -231,7 +284,15 @@ body {
 .name {
     font-family: 'Vujahday Script', 'cursive';
     color: var(--white-color);
-    font-size: 6vw;
+    font-size: 8vw;
+    text-align: center;
+    padding: 25px;
+}
+
+#bryanname {
+    font-family: 'Vujahday Script', 'cursive';
+    color: var(--white-color);
+    font-size:6vw;
     text-align: center;
     padding: 25px;
 }
@@ -285,6 +346,13 @@ footer {
     background-color: rgba(0,0,0,.7);
  }
 
+ #footercontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+ }
+
 #navlinksfoot ul {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -309,14 +377,21 @@ footer p {
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     footer {
         background-color: var(--black-color);
     }
 
     #navlinksfoot ul {
+        display: none;
         font-size: 14px;
         width: 100%;
+    }
+
+    #footercontent {
+        display: block;
+        font-size: 12px;
+        line-height: 10px; 
     }
 
     #navlinksfoot {
